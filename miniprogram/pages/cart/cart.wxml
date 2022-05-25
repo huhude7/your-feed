@@ -1,0 +1,30 @@
+<view class="logined" wx:if="{{logined}}">
+<cart-item 
+  bind:setCheckedNum = "setCheckedNum"
+  wx:for="{{pageData}}"
+  wx:key="index"
+  cartData="{{item}}"
+  style="position: relative;"
+>
+<view slot="del" bindtap="tapDel" data-item="{{item}}">×</view>
+</cart-item>
+
+<van-submit-bar
+  wx:if="{{!logined||!isEmpty}}"
+  custom-class="submit-bar"
+  price="{{ totalPrice }}"
+  button-text="提交订单"
+  bind:submit="submitOrder"
+  tip="{{ true }}"
+>
+<radio checked="{{selectAllChecked}}" bindtap="selectAllChange" color="#ff6034">全选</radio>
+</van-submit-bar>
+</view>
+
+<view class="emptyTip" wx:if="{{!logined||isEmpty}}">
+  <van-empty
+  class="custom-image"
+  image="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/空购物车.png"
+  description="购物车是空的！去商城逛逛吧"
+/>
+</view>

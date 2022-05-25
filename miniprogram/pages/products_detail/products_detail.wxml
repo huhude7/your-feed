@@ -1,0 +1,29 @@
+<!-- swiper -->
+<view class="swiperBox">
+  <swiper indicator-dots="true" indicator-color="#696969" indicator-active-color="rgb(255, 255, 255)" autoplay interval='3000'  circular="false">
+  <swiper-item wx:for="{{pageData.pics}}" wx:key="index">
+    <image src="{{item}}" mode="aspectFit"></image>
+  </swiper-item>
+</swiper>
+</view>
+<!-- mask -->
+<view class="mask"></view>
+<!-- saveAndShare -->
+<view class="saveAndShare">
+  <view class="save">
+    <van-icon name="{{storeIcon}}" size="60rpx" color="#d07a5c" bindtap="tapStore"/>
+  </view>
+  <view class="cart">
+    <van-icon name="{{cartIcon}}" size="60rpx" color="#d07a5c" bindtap="tapCart"/>
+  </view>
+  <view class="share">
+    <van-icon name="share-o" size="60rpx" color="#d07a5c" bindtap="tapShare"/>
+  </view>
+</view>
+<!-- name  and  price-->
+<view class="name">
+  <text>{{pageData.name}}</text>
+</view>
+<view class="price">
+  <text>￥ {{pageData.price}}.00</text>
+</view>

@@ -1,0 +1,18 @@
+page {
+  padding-bottom: 300rpx;
+}
+.cartItem {
+  border-bottom: 2rpx solid #f0f0f0;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+element .style {
+  font-size: 30rpx;
+}
+.van-button--danger {
+  background-color: #f8490a;
+}
+.submit-bar {
+  margin-bottom: 50px !important;
+}

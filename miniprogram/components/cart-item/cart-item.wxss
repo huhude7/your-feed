@@ -1,0 +1,12 @@
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  background-color: white;
+}
+radio {
+  margin-left: 20rpx;
+}
+.cart-item-card  {
+  background-color: #fff !important;
+}

@@ -1,0 +1,47 @@
+<text class="more-title">Search Result</text>
+<view style="display: {{tipsDisplay}}" class="tips">暂时没有商品</view>
+<view class="more">
+  <view 
+  class="itemBox"  
+  wx:key="index" 
+  bindtap="tapItem" 
+  wx:for="{{searchData}}"  
+  wx:key="index"
+  data-id="{{item._id}}"
+  >
+    <view class="image">
+      <image 
+      src="{{item.pics[0]}}" 
+      mode="aspectFit"
+      ></image>
+    </view>
+    <view class="title">
+      <view class="name">{{item.name}}</view>
+      <view class="price">￥{{item.price}}.00</view>
+    </view>
+  </view>
+</view>
+
+<view style="display: {{tips2Display}}" class="tips">包含“{{inputContent}}”的商品：</view>
+<view style="display: {{tips3Display}}" class="tips">无</view>
+<view class="more">
+  <view 
+  class="itemBox"  
+  wx:key="index" 
+  bindtap="tapItem" 
+  wx:for="{{searchDatabaseData}}"  
+  wx:key="index"
+  data-id="{{item._id}}"
+  >
+    <view class="image">
+      <image 
+      src="{{item.pics[0]}}" 
+      mode="aspectFit"
+      ></image>
+    </view>
+    <view class="title">
+      <view class="name">{{item.name}}</view>
+      <view class="price">￥{{item.price}}.00</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="address" >
+  <view class="item" wx:for="{{pageData}}" wx:key="index" >
+    <view class="nameAndPhoneNumber">{{item.name}} {{item.telephoneNumber}}</view>
+    <view class="locationAndModify">
+      <view class="location">{{item.location}} {{item.locationDetail}}</view>
+      <view class="imageBox" bindtap="tapModify" data-item="{{item}}" data-index="{{index}}">
+        <image src="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/修改.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="addAddress" bindtap="tapAddAddress">+ 添加收获地址</view>
+</view>

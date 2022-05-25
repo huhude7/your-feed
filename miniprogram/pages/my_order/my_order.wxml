@@ -1,0 +1,25 @@
+<van-tabs active="{{ active }}" bind:change="onChange" color="#ff6034">
+  <van-tab title="全部订单">
+    <view class="orderItem" wx:for="{{order}}" wx:key="index">
+      <view class="time">下单时间：{{item.time}}</view>
+      <view class="orderItemDetail" wx:for="{{item.orderData}}">
+        <view class="images">
+          <image mode="aspectFit"  src="{{item.pics[0]}}" wx:key="index"></image>
+        </view>
+        <view class="nameAndPirceAndAmount">
+          <view class="name">{{item.name}}</view>
+          <view class="amount">x {{item.amount}}</view>
+          <view class="price">￥{{item.price}}.00</view>
+        </view>
+      </view>
+      <view class="priceAndState">
+        <view class="price">共计：￥{{item.totalPrice}}.00</view>
+        <view class="state">{{item.state}}</view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="待付款">
+  </van-tab>
+  <van-tab title="待收货"></van-tab>
+  <van-tab title="退款/退货"></van-tab>
+</van-tabs>

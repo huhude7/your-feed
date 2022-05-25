@@ -1,0 +1,63 @@
+/* swiper */
+.swiperBox {
+  margin: 0 80rpx;
+  margin-top: 28rpx;
+}
+.swiperBox swiper {
+  border-radius: 30rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 723rpx;
+  background-color: rgba(187, 184, 184, 0.212);
+  /* box-shadow:  -5rpx 11rpx 27rpx 5rpx rgba(0, 0, 0, 0.2); */
+}
+.swiperBox swiper swiper-item {
+  border-radius: 30rpx;
+}
+.swiperBox swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+/* mask */
+.mask {
+  height: 227rpx;
+  width: 372rpx;
+  background-color: #f6f6f6;
+  transform: translateY(-87rpx);
+  margin: 0 auto;
+  border-radius: 54rpx;
+}
+/* saveAndShare */
+.saveAndShare {
+  background-color: white;
+  box-sizing: border-box;
+  /* border: 15rpx solid #f6f6f6; */
+  border-radius: 44rpx;
+  height: 105rpx;
+  width: 340rpx;
+  margin: 0 auto;
+  transform: translateY(-299rpx);
+  display: flex;
+  justify-content: space-around;
+  /* box-shadow:  -5rpx 11rpx 27rpx 5rpx rgba(0, 0, 0, 0.07); */
+  box-shadow:0 2px 27px 6px rgba(0, 0, 0, .12);
+}
+.saveAndShare view{
+  /* background-color: #cc704fbb; */
+  border-radius: 35rpx;
+  width: 66rpx;
+  height:66rpx;
+  margin: auto 0;
+  line-height: 70rpx;
+  text-align: center;
+}
+/* name and price */
+.name , .price{
+  margin-left:80rpx;
+  font-size: 45rpx;
+  font-weight: 600;
+}
+.price {
+  color: rgb(92, 91, 91);
+  margin-top: 30rpx;
+}

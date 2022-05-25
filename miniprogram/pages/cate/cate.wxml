@@ -1,0 +1,56 @@
+<van-skeleton title row="3" animate="true" style="display: {{skeletonDisplay}};"/>
+<!-- search -->
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#ffffff"
+  placeholder="请输入搜索关键词"
+  bind:search ="tapSearch"
+  bind:blur = "searchBlur"
+/>
+
+<!-- scroll -->
+<view class="scroll-view-container">
+  <!-- left -->
+    <scroll-view 
+    class="scroll-view-left" 
+    scroll-y="true"
+    style="height:{{windowHeight}}px;"
+    >
+      <view 
+      class ="scroll-view-left-item {{ index == currentIndex ? 'active':''}}"
+      wx:for="{{pageDataDetail}}"
+      wx:key="index"
+      data-index="{{index}}"
+      bindtap="tapCate"
+      >{{item.cateName}}</view>
+    </scroll-view>
+    <!-- right -->
+    <scroll-view  
+    class="scroll-view-right" 
+    scroll-y="true" 
+    style="height:{{windowHeight}}px;"
+    scroll-into-view="{{toView}}"
+    bindscroll="rightScroll"
+    >
+      <view 
+      class ="scroll-view-right-item"
+      wx:for="{{pageDataDetail}}"
+      wx:key="index"
+      id="{{item.id}}"
+      >
+        <view class="title">{{item.cateName}}</view>
+        <view class="item" wx:for="{{item.cateList}}" wx:key="index" bindtap="tapItem" data-id="{{item._id}}">
+          <view class="image">
+            <image src="{{item.pics[0]}}" mode="aspectFit"></image>
+          </view>
+          <view class="text">
+            <view class="name">{{item.name}}</view>
+            <view class="price">￥{{item.price}}.00</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+</view>
+
+<van-divider contentPosition="center">the end</van-divider>

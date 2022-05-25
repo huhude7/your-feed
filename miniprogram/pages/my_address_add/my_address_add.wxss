@@ -1,0 +1,59 @@
+form {
+  width: inherit;
+}
+.form {
+  background-color: #fff;
+  margin: 30rpx 40rpx;
+  margin-top: 60rpx;
+  border-radius: 10rpx;
+  border: 1px solid rgba(201, 197, 197, 0.425);
+}
+.form .name,.telephoneNumber,.location,.locationDetail,.default {
+  padding-left: 35rpx;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid rgba(170, 167, 167, 0.11);
+}
+.form .title {
+  margin-right: -5rpx;
+  width: 5em;
+}
+.location .locationText {
+  color: gray;
+  width: 370rpx;
+}
+.location .imageBox {
+  color: gray;
+}
+.locationDetail input {
+  width: 400rpx;
+}
+.default {
+  margin-left: 30rpx;
+}
+.default .title {
+  margin-right: 30rpx;
+}
+/* buttons */
+.buttons {
+  width: inherit;
+}
+.buttons view {
+  margin: 30rpx auto;
+  box-sizing: border-box;
+  width: 580rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+}
+.buttons .save,.add {
+  border: 4rpx solid #e76430;
+}
+.buttons .del {
+  color: #fff;
+  background-color: #f72121;
+}

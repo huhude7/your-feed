@@ -1,0 +1,38 @@
+<view class="title" bindtap="getMoreAddress">
+  <view class="text">收货地址</view>
+  <van-icon name="arrow" />
+</view>
+<view class="address">
+  <view class="content">
+    <view class="perItem">
+      <view class="itemName">收货人：</view>
+      <view class="itemContent">{{addressData.name}}</view>
+    </view>
+    <view class="perItem">
+      <view class="itemName">联系方式：</view>
+      <view class="itemContent">{{addressData.telephoneNumber}}</view>
+    </view>
+    <view class="perItem">
+      <view class="itemName">详细地址：</view>
+      <view class="itemContent">{{addressData.location}}  {{addressData.locationDetail}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="orderItem" wx:for="{{orderData}}" wx:key="index">
+  <image src="{{item.pics[0]}}" mode="aspectFit"></image>
+  <view class="exceptImage">
+  <view class="name">{{item.name}}</view>
+  <view class="amountAndPrice">
+    <view class="amount">× {{item.amount}}</view>
+    <view class="price">￥{{item.amount*item.price}}.00</view>
+  </view>
+</view>
+</view>
+
+
+<van-submit-bar
+  price="{{ totalPrice*100 }}"
+  button-text="提交订单"
+  bind:submit="submitOrder"
+/>

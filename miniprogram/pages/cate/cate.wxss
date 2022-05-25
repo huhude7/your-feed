@@ -1,0 +1,83 @@
+page {
+  padding-bottom: 140rpx;
+}
+.scroll-view-container {
+  display: flex;
+}
+.scroll-view-container .scroll-view-left {
+  width: 240rpx;
+}
+.scroll-view-container .scroll-view-left .scroll-view-left-item {
+  background-color: #f7f7f7;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 25rpx;
+}
+.scroll-view-container .scroll-view-left .active {
+  position: relative;
+  box-sizing: border-box;
+  font-weight: 1000;
+  background-color: white;
+}
+.scroll-view-container .scroll-view-left .active::after {
+  position: absolute;
+  top: 25%;
+  content: " ";
+  display: block;
+  width: 10rpx;
+  height: 60rpx;
+  background-color: #f8490a;
+  border-radius: 5rpx;
+}
+
+.scroll-view-container .scroll-view-right {
+  background-color: white;
+}
+
+.scroll-view-container .scroll-view-right .title {
+  color: gray;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+}
+.scroll-view-container .scroll-view-right .item {
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  width: 505rpx;
+  height: 215rpx;
+  border-radius: 30rpx;
+  display: flex;
+  overflow: hidden;
+}
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+.scroll-view-container .scroll-view-right .item .image {
+  width: 215rpx;
+  height: 215rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  padding: 5rpx 5rpx;
+}
+.scroll-view-container .scroll-view-right .item .image image {
+  padding-left: -10rpx;
+  width: 100%;
+  height: 100%;
+
+}
+.scroll-view-container .scroll-view-right .item .text {
+  margin-left: 20rpx;
+  font-weight: 550;
+}
+.scroll-view-container .scroll-view-right .item .text .name {
+  overflow: hidden;
+  margin-top: 20rpx;
+  font-size: 33rpx;
+}
+.scroll-view-container .scroll-view-right .item .text .price {
+  color: #f8490a;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+}

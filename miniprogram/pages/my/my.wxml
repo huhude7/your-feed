@@ -1,0 +1,49 @@
+<!-- header -->
+<view class="header">
+
+  <image src="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/testPics/alan-w-P2Ehy4BtV9Q-unsplash.png" mode="aspectFill"></image>
+
+  <view class="nameAndPhoto" bindtap="getUserData" style="pointer-events: {{pointerEvents}};"> 
+    <view class="portrait">
+      <image wx:if="{{avatarUrl==''}}"
+      src="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/获取头像 (1).png" 
+      mode="aspectFill"
+      ></image>
+      <image 
+      src="{{avatarUrl}}" 
+      mode="aspectFill"
+      ></image>
+    </view>
+    <view class="name">{{nickName}}</view>
+  </view>
+</view>
+<!-- form -->
+<view class="footer">
+  <view class="title" >
+    <view class="leftText">我的订单</view>
+    <view class="rightText" bindtap="tapAllOrder">查看全部订单 ></view>
+  </view>
+  <view class="pannel" bindtap="tapAllOrder">
+    <van-grid>
+      <van-grid-item icon="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/全部订单.png" text="全部订单" />
+    <van-grid-item icon="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/待付款.png" text="待付款" />
+    <van-grid-item icon="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/待收货-03.png" text="待收货" />
+    <van-grid-item icon="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/退款.png" text="退款/退货" />
+    
+    </van-grid>
+  </view>
+  <view class="lastPannel">
+    <view class="lastPannelItem" bindtap="tapAddress">
+      <view class="address" >收货地址</view>
+      <van-icon name="arrow" size="45rpx" />
+    </view>
+    <view class="lastPannelItem">
+      <view class="contact"><button open-type="contact" bindcontact="handleContact" session-from="sessionFrom">联系客服</button></view>
+      <van-icon name="arrow" size="45rpx" />
+    </view>
+    <view class="lastPannelItem" bindtap="logOut">
+      <view class="quit" >退出登录</view>
+      <van-icon name="arrow" size="45rpx" />
+    </view>
+  </view>
+</view>

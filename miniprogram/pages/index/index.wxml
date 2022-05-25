@@ -1,0 +1,95 @@
+<van-skeleton title row="3" animate="true" style="display: {{skeletonDisplay}};"/>
+
+<!-- header -->
+<view class="header">
+  <view class="header-left">Your Feed</view>
+  <view class="header-right">
+    <van-icon name="point-gift" size="70rpx" />
+  </view>
+</view>
+  
+<!-- swiper -->
+<view class="swiperContainer">
+  <swiper 
+  class='bannerSwiper' 
+  previous-margin="70rpx" 
+  next-margin='70rpx' 
+  indicator-dots="true" 
+  indicator-color="rgba(255, 255, 255,0.3)" 
+  indicator-active-color="rgb(255, 255, 255)" 
+  autoplay="true"
+  interval='3000' 
+  bindchange='onChange'
+  circular="false">
+      <swiper-item 
+      wx:for="{{swiperData}}" 
+      wx:key="index" 
+      bindtap="tapSwiper" 
+      data-id="{{item._id}}"
+      data-idx="{{index}}"
+      >
+        <image 
+        class="{{index==selindex? 'imageBanner':'imageBanner_small'}}" 
+        src="{{item.poster[0]}}"></image>
+      </swiper-item>
+  </swiper>
+</view>
+
+
+
+<!-- scroll-view -->
+<view class="middle-text">
+  <text class="title">Recommended for you</text>
+  <view class="subtitle">Based On Search</view>
+</view>
+<view class="scroll-view">
+  <scroll-view scroll-x="true">
+    <view class="scroll-per-box" wx:for="{{scrollXData}}" wx:key="index" bindtap="tapScroll" data-id="{{item._id}}" data-idx="{{index}}">
+      <view class="scroll-per-box-pic">
+        <image src="{{item.pics[0]}}" mode="aspectFit"></image>
+      </view>
+      <view class="scroll-per-box-text">
+        <view class="text1">{{item.name}}</view>
+        <view class="text2">￥{{item.price}}.00</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- brands -->
+<view class="brands-box">
+  <text class="title">Top Brands</text>
+  <view class="imageAndText" >
+    <view 
+    class="imageAndTextItem" 
+    wx:for="{{brandsData}}" 
+    wx:key="index" 
+    bindtap="tapBrands" 
+    data-name="{{item.name}}"
+    >
+      <view class="image">
+        <image src="{{item.logo[0]}}" mode="aspectFit" ></image>
+      </view>
+      <view class="text">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- more -->
+<text class="more-title">More</text>
+<view class="more">
+  <view class="itemBox" wx:for="{{moreData}}"  wx:key="index" bindtap="tapMore" data-id="{{item._id}}">
+    <view class="image">
+      <image 
+      src="{{item.pics[0]}}" 
+      mode="widthFix"
+      ></image>
+    </view>
+    <view class="title">
+      <view class="name">{{item.name}}</view>
+      <view class="price">￥{{item.price}}.00</view>
+    </view>
+  </view>
+</view>
+
+<van-divider contentPosition="center">已经到底了</van-divider>

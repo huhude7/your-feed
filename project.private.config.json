@@ -1,0 +1,148 @@
+{
+  "setting": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/getOpenId/index",
+          "pathName": "pages/getOpenId/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/deployService/index",
+          "pathName": "pages/deployService/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectRecord/index",
+          "pathName": "pages/selectRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sumRecordResult/index",
+          "pathName": "pages/sumRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecord/index",
+          "pathName": "pages/updateRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordResult/index",
+          "pathName": "pages/updateRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordSuccess/index",
+          "pathName": "pages/updateRecordSuccess/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/cate/cate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "id=d4107ab1624d9d5605512c9d0bffa90a",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/search_result/search_result",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/products/products",
+          "query": "id=d4107ab1624d9d5605512c9d0bffa90a",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my_address/my_address",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my_address_add/my_address_add",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my_order/my_order",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/order",
+          "query": "data=[{\"_createTime\":1649766695799,\"_id\":\"78d83437625571270054c8581dac5049\",\"_updateTime\":1650949988869,\"amount\":1,\"brandsName\":\"efbc6d716251837705b4bfd201fd026b\",\"cateName\":\"807102f66253e16005d98a1d2a2ba4ea\",\"content\":\"An all-new collection featuring four of Rick and Morty's greatest hits! Thrill to the rise and fall of the Flesh Curtains; witness a revolution against Rick; experience the pure sci-fi horror of \\\"Morty Shines\\\"; and in the last story, an alien invasion that threatens all of reality!\",\"name\":\"Annihilation Tour\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-26/9usrb3oz8ru5aizaux9cnlza11kx71ai_.png\"],\"position\":\"more\",\"price\":96,\"rate\":8.8,\"surplus\":100,\"checked\":true},{\"_createTime\":1650607521314,\"_id\":\"bb4c2515626245a100e8aea9532b1931\",\"_updateTime\":1650694196170,\"amount\":1,\"brandsName\":\"efbc6d716251838f05b4c43a33946e26\",\"cateName\":\"78d834376253e18300389b58088c74b8\",\"content\":\"【本产品仅限日本国内的销售,无法从国外购买。 】 【尺寸】高约44厘米 【可动点】31处 【附件(配件)】替换用头部(彼得派克)、替换用眼部部件(×4套)、网翼(×2)、蜘蛛无人机背包、口罩、智能手机、GPS全息图、蜘蛛网、蜘蛛网(×4)、蜘蛛网用*零件、替换用手部零件(×8)、立体模型底座、立体模型底座用零件(×3) 特殊功能:发光功能\",\"name\":\"1/4 蜘蛛侠(豪华版)\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-22/poaf23z6a4i1qdt1bycfregy2ewjpjpy_.png\"],\"position\":\"more\",\"poster\":[],\"price\":3368,\"rate\":8.6,\"surplus\":100,\"checked\":true},{\"_createTime\":1650122673645,\"_id\":\"f1dedd58625adfb100317f980a19bc26\",\"_updateTime\":1650122673645,\"amount\":1,\"cateName\":\"78d834376253e18300389b58088c74b8\",\"name\":\"鬼灭之刃 富冈义勇\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-16/k9gx60egpjstvotumhbhjkk1hidivswn_.png\"],\"position\":\"more\",\"price\":372,\"surplus\":100,\"checked\":true},{\"_createTime\":1651388945425,\"_id\":\"b69f67c0626e321100c7cc517a16b5c2\",\"_updateTime\":1651389246318,\"amount\":1,\"cateName\":\"d2fe6f206253e1e406528530544ceb1e\",\"content\":\"曲目列表 Disc 1 Side A Overworld Day Eerie Overwor",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/order",
+          "query": "data=[{\"_createTime\":1650695012300,\"_id\":\"6f49505e62639b6401d1b0d26c0b12a8\",\"_updateTime\":1650695012300,\"amount\":1,\"brandsName\":\"d2fe6f206251835006056d886acc3e39\",\"cateName\":\"3ca59dfa6253e193001bf63064a820cb\",\"content\":\"尺寸:约直径8.5×高9厘米 材质:瓷器 生产国:中国 容量:约270毫升 (C)2019 MARVEL.Amazon.co.jp所销售,发送的产品是厂家正品。\",\"name\":\"KAWAII 马克杯\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-23/zrldjuwvvpfibquxix23qngx7jwhti6n_.png\"],\"position\":\"more\",\"price\":109,\"rate\":7.4,\"surplus\":100,\"checked\":true},{\"_createTime\":1650417562357,\"_id\":\"1cf827d0625f5f9a00e99840461be102\",\"_updateTime\":1650417562357,\"amount\":2,\"brandsName\":\"efbc6d716251837705b4bfd201fd026b\",\"cateName\":\"807102f66253e16005d98a1d2a2ba4ea\",\"content\":\"When Rick finds the source of a new, incredibly powerful substance, he lays claim to an entire planet in order to corner the market. But Rick and Morty aren't the only ones on the recently renamed Arrickis, and the original inhabitants aren't going to go away quietly.\",\"name\":\"HeRICKtics of Rick\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-20/vhg4od3izt9k1f9ghcrak4bvey1mkt67_.webp\"],\"position\":\"swiper\",\"poster\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-20/snsjn2enqnpt703oztcuwb9dovg0c1jj_.png\"],\"price\":39,\"rate\":9.3,\"surplus\":100,\"checked\":true},{\"_createTime\":1649253718861,\"_id\":\"d4107ab1624d9d5605512c9d0bffa90a\",\"_updateTime\":1653222904622,\"amount\":2,\"brandsName\":\"efbc6d716251832105b4a4483fb2364f\",\"cateName\":\"78d834376253e18300389b58088c74b8\",\"content\":\"(c)TEZUKA PRODUCTIONS. 尺寸:全高23厘米 材质:合金 配件:透明零件\",\"contents\":[\"(c)TEZUKA PRODUCTIONS.\",\"尺寸:全高23厘米\",\"材质:合金\",\"配件:透明零件\"],\"name\":\"铁臂阿童木 clearVer. 合金手办\",\"pics\":[\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/cloudbase-cms/upload/2022-04-20/3zioojkk5o17qaekh1ptzh9dy7o8gb50_.png\",\"cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/selectAddress/selectAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

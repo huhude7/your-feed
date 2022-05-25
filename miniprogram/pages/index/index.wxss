@@ -1,0 +1,221 @@
+/* header */
+.header {
+  margin : 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  margin-bottom: 30rpx;
+}
+
+.header .header-left {
+  font-size: 60rpx;
+  font-weight: 1000;
+}
+
+.header .header-right {
+  height: 80rpx;
+  line-height: 95rpx;
+}
+
+/* swiper */
+.swiperContainer {
+  margin-top: 16rpx;
+}
+
+.swiperContainer swiper{
+  height: 400rpx;
+  width: 100vw;
+}
+
+.swiperContainer swiper swiper-item image{
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+  border-radius: 10rpx;
+  width: inherit;
+  height: inherit;
+}
+
+.imageBanner {
+  animation-name: scaleDraw;
+  opacity: 1;
+  transform: scale(1.0);
+}
+
+.imageBanner_small {
+  animation-name: scaleDraw2;
+  transform: scale(.9);
+  opacity: 0.5;
+}
+
+@keyframes scaleDraw {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+@keyframes scaleDraw2 {
+  0% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(.9);
+  }
+}
+
+/* middle-text */
+.middle-text {
+  margin : 0 30rpx;
+  margin-top: 60rpx;
+}
+
+.middle-text .title {
+  font-size: 38rpx;
+  font-weight: 1000;
+}
+
+.middle-text .subtitle {
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  color: grey;
+  font-weight: 1000;
+}
+
+/* scroll-view */
+.scroll-view {
+  margin-top: 50rpx;
+}
+
+scroll-view {
+  width: 100%;
+  white-space: nowrap;
+}
+
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+scroll-view .scroll-per-box {
+  box-sizing: border-box;
+  margin-left: 30rpx; 
+  display: inline-block;
+  width: 280rpx;
+  height: 380rpx;
+}
+.scroll-per-box .scroll-per-box-pic {
+  width: inherit;
+  height: inherit;
+}
+.scroll-per-box image {
+  box-sizing: border-box;
+  padding: 20rpx 20rpx;
+  background-color: rgba(187, 184, 184, 0.322);
+  /* background-color: #fff; */
+  border-radius: 10rpx;
+  width: inherit;
+  height: inherit;
+}
+
+.scroll-per-box .scroll-per-box-text .text1 {
+  margin-top: 27rpx;
+  margin-bottom: 15rpx;
+  font-weight: 1000;
+}
+
+/* brands */
+.brands-box {
+  margin-top: 60rpx;
+  margin-right: 30rpx;
+}
+
+.brands-box .title {
+  padding-left: 30rpx;
+  font-size: 38rpx;
+  font-weight: 1000;
+
+}
+
+.brands-box .imageAndText {
+  display: flex;
+  flex-wrap: wrap;
+  height: 327rpx;
+  margin-top: 50rpx;
+}
+
+.brands-box .imageAndText .imageAndTextItem {
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  height: 50%;
+  width: 20%;
+}
+
+.brands-box .imageAndText .imageAndTextItem .image {
+  box-sizing: border-box;
+  height: 110rpx;
+  width: 110rpx;
+  background-color: white;
+  background-color: rgba(187, 184, 184, 0.322);
+  border-radius: 55rpx;
+}
+
+.brands-box .imageAndText .imageAndTextItem .text {
+  font-size: 24rpx;
+  padding-left: -10rpx;
+  text-align: center;
+  margin-top: 14rpx;
+  color: #969696;
+}
+
+.brands-box .imageAndText .imageAndTextItem .image image {
+  width: 100%;
+  height: 100%;
+}
+
+/* more */
+.more-title {
+  font-size: 38rpx;
+  font-weight: 1000;
+  margin-left: 30rpx;
+  margin-top: 70rpx;
+}
+.more {
+  margin: 30rpx 30rpx;
+  margin-top: 50rpx;
+  column-count: 2;
+  column-gap:30rpx;
+}
+.more .itemBox {
+  border-radius: 15rpx;
+  break-inside: avoid-column;
+  margin-bottom: 30rpx;
+  background-color: white;
+  background-color: rgba(187, 184, 184, 0.103);
+}
+.more .itemBox .image {
+  padding: 30rpx 30rpx;
+}
+.more .itemBox .title {
+  width: inherit;
+  height: 100rpx;
+  text-align: center;
+  font-weight: 700;
+  font-size: 27rpx;
+}
+.more .itemBox .title .price {
+  margin-top: 10rpx;
+  color: gray;
+}
+.more .itemBox image { 
+  width: 100%;
+} 

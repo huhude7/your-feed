@@ -1,0 +1,20 @@
+<view class="title">选择收获地址</view>
+<view 
+  class="item" 
+  wx:for="{{pageData}}" 
+  wx:key="index" 
+  bindtap="changeAddress"
+  data-address="{{item}}"
+>
+  <view class="nameAndPhoneNumber">{{item.name}} {{item.telephoneNumber}}</view>
+  <view class="location">{{item.location}} {{item.locationDetail}}</view>
+</view>
+
+<view class="emptyTip" wx:if="{{!hasData}}">
+  <van-empty
+  class="custom-image"
+  image="cloud://cloud1-6gno2d8m557ae1a5.636c-cloud1-6gno2d8m557ae1a5-1310809433/my-icons/地址为空.png"
+  description="尚未保存收货地址"
+/>
+</view>
+<view class="add" wx:if="{{!hasData}}" bindtap="addAddress">去添加</view>

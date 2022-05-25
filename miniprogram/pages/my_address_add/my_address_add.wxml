@@ -1,0 +1,41 @@
+<form>
+<view class="form">
+  <view class="name">
+    <view class="title">收货人</view>
+    <input type="text" placeholder="收货人姓名" bindblur="inputName"
+    value="{{pageData.name?pageData.name:''}}"/>
+  </view>
+
+  <view class="telephoneNumber">
+    <view class="title">手机号码</view>
+    <input type="number" placeholder="收货人手机号" bindblur="inputTelephoneNumber"
+    value="{{pageData.telephoneNumber?pageData.telephoneNumber:''}}"
+    />
+  </view>
+
+  <view class="location">
+    <view class="title">所在地区</view>
+    <picker mode="region" bindchange="pickerChange">
+      <view class="locationText">{{location?location:"选择所在地区"}}{{pageData.location?pageData.location:'选择所在地区'}}</view>
+    </picker>
+    <view class="imageBox" bindtap="tapGPS">
+      <van-icon name="location" />定位
+    </view>
+  </view>
+
+  <view class="locationDetail">
+    <view class="title">详细地址</view>
+    <input type="text" placeholder="请填写楼号、门牌号等信息" value="{{pageData.locationDetail?pageData.locationDetail:''}}" bindblur="inputLocationDetail"/>
+  </view>
+</view> 
+
+  <view class="default">
+    <view class="title">设为默认收获地址</view>
+    <switch bindchange="defaultChange" color="#ce5f34"></switch>
+  </view>
+
+  <view class="buttons">
+    <view class="save"bindtap="saveAddress">保存此地址</view>
+    <view class="del" style="display: {{delDisplay}};" bindtap="tapDel">删除此地址</view>
+  </view>
+</form>

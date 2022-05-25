@@ -1,0 +1,45 @@
+<view class="swiper" >
+  <swiper bindchange="swiperChange" autoplay="true" current="{{currentPic}}">
+    <swiper-item wx:for="{{pageData.pics}}" wx:key="index" bindtap="tapToSee" data-picUrl = "{{pageData.pics}}">
+      <view class="imageBox">
+        <image src="{{item}}" mode="aspectFit"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="tips">{{currentSwiper}}/{{pageData.pics.length}}</view>
+</view>
+<!-- description -->
+<view class="description">
+<!-- thumbnailAndRate -->
+<view class="thumbnailAndRate">
+  <view class="thumbnail">
+    <view class="imageBox" wx:for="{{pageData.pics}}" wx:key="index" bindtap="exchange" data-id="{{index}}">
+      <image src="{{item}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="rate">
+    <van-icon name="star" color="#cd5e34" size="50rpx"/>
+    <view class="rateValue">{{pageData.rate}}</view>
+  </view>
+</view>
+  <view class="nameAndPrice">
+    <view class="name">{{pageData.name}}</view>
+    <view class="price">￥{{pageData.price}}.00</view>
+  </view>
+  <view class="content" >
+      <rich-text>{{pageData.content}}</rich-text>
+  </view>
+<view class="occupation"></view>
+</view>
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+    <view class="modals-cancel" bindtap="hideModal">
+    </view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+      <image src="{{pageData.pics[0]}}" mode="aspectFit"></image>
+    </view>
+</view>
+<!-- bottom -->
+<view class="bottom">
+  <view class="cart" bindtap="addToCart">Add to Cart</view>
+  <view class="buy"  bindtap="submitOrder">Buy Now</view>
+</view>

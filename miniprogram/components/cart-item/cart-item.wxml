@@ -1,0 +1,34 @@
+<view class="cartItem">
+  <radio 
+  color="#ff6034" 
+  disabled="{{cartData.surplus > 0 ? false:true}}"
+  bindtap="itemCheckedChange"
+  checked="{{cartData.surplus > 0 ? cartData.checked:''}}"
+  ></radio>
+  <van-card
+    custom-class="cart-item-card"
+    style="flex: 1;"
+    tag="{{cartData.surplus> 0 ?'':'售罄'}}"
+    price="{{cartData.price}}.00"
+    title="{{cartData.name}}"
+    thumb="{{ cartData.pics[0] }}"
+    bindtap="tapCartItem"
+    data-_id="{{cartData._id}}"
+  >
+  <view slot = "num">
+    
+    <van-stepper 
+    value="{{1}}" 
+    bind:change="changeAmount"
+    style="position: absolute; right: 0rpx;top: 70%;"
+    disabled ="{{cartData.amount<=0}}"
+    /> 
+  </view>
+  </van-card>
+  <slot 
+    name="del"
+    bindtap="delCartItem"
+    data-_id="{{cartData._id}}"
+    data-index="{{index}}"
+   ></slot>
+</view>

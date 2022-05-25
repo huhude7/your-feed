@@ -1,0 +1,11 @@
+/* components/custom-tab-bar/index.wxss */
+van-tabbar-item{
+ --tabbar-item-margin-bottom:0px
+ margin-bottom:30rpx
+}
+.van-tabbar-item__text {
+  color: #d36135;
+}
+van-tabbar-item {
+  margin-bottom: 15rpx;
+}

@@ -1,0 +1,92 @@
+.header {
+  height: 520rpx;
+  border-radius: 0 0 120rpx 120rpx;
+}
+.header image {
+  width: 100%;
+  height: 100%;
+}
+
+.nameAndPhoto {
+  width: 750rpx;
+  height: 180rpx;
+  display: flex;
+  padding-left: 30rpx;
+  transform: translateY(-330rpx);
+}
+.nameAndPhoto .portrait {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 90rpx;
+  border: 8rpx solid white;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: white;
+}
+.nameAndPhoto .portrait image {
+  width: 100%;
+  height: 100%;
+}
+.nameAndPhoto .name {
+  height: 180rpx;
+  line-height: 180rpx;
+  padding-left: 50rpx;
+  font-size: 35rpx;
+  font-weight: 1000;
+  color: white;
+  overflow: hidden;
+}
+
+/* middle */
+.middle {
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin: 0 30rpx;
+  margin-top: -100rpx;
+}
+.middle .van-grid-item {
+  background-color: #f6f6f6;
+}
+/* footer */
+.footer {
+  margin: 0 30rpx;
+  margin-top: 50rpx;
+  height: 478rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.footer .title {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: white;
+}
+.footer .title .leftText {
+  margin-left: 25rpx;
+  font-size: 34rpx;
+  font-weight: 450;
+}
+.footer .title .rightText {
+  margin-right: 16rpx;
+  color: gray;
+}
+.footer .lastPannel .lastPannelItem {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f6f6f6 ;
+}
+.footer .lastPannel .lastPannelItem view {
+  margin-left: 30rpx;
+  font-weight: 390;
+}
+.footer .lastPannel .lastPannelItem .van-icon {
+  margin-right: 30rpx;
+}
+.lastPannelItem .contact button {
+  font-size: 31rpx;
+  margin-left: -24rpx;
+}
